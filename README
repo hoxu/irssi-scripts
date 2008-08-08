@@ -1,0 +1,11 @@
+irssi-scripts is a collection of user-contributed and user-reviewed scripts for
+irssi. Only scripts under a free software license should be in this repository.
+
+Branches:
+
+master
+  Reviewed scripts, should be safe to use
+
+incoming
+  New scripts and updates that have not yet been reviewed, use at your own risk!
+
