@@ -1,11 +1,24 @@
 irssi-scripts is a collection of user-contributed and user-reviewed scripts for
 irssi. Only scripts under a free software license should be in this repository.
 
-Branches:
+Branches
+========
 
 master
   Reviewed scripts, should be safe to use
 
 incoming
   New scripts and updates that have not yet been reviewed, use at your own risk!
+
+Reviewing process
+=================
+
+1. New scripts or updates are added to the incoming branch.
+2. New changes are reviewed by reviewer A:
+   $ git checkout incoming
+   $ git diff master..incoming
+   $ git commit --allow-empty -m 'Reviewed by A' # empty commit is created to denote the review
+3. New changes are reviewed by reviewer B; now they can be merged to master branch:
+   $ git merge --no-ff --no-commit incoming
+   $ git commit --signoff
 
