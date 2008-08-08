@@ -1,0 +1,2 @@
+#!/bin/bash
+(echo -e "Reviewed by $(git config user.name)\n"; (echo -e "Reviewed commits up to $(git-rev-parse HEAD)\n$(date --rfc-3339=seconds) $(git config user.name)") |gpg --clearsign) |git commit --allow-empty -F -
