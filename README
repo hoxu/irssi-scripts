@@ -1,6 +1,9 @@
 irssi-scripts is a collection of user-contributed and user-reviewed scripts for
 irssi. Only scripts under a free software license should be in this repository.
 
+This is meant for users who haven't had luck getting any irssi devs reviewing
+their scripts for scripts.irssi.org which seems to be dead for extensive times.
+
 Branches
 ========
 
@@ -19,6 +22,9 @@ Reviewing process
    $ git diff master..incoming
    $ git commit --allow-empty -m 'Reviewed by A' # empty commit is created to denote the review
 3. New changes are reviewed by reviewer B; now they can be merged to master branch:
-   $ git merge --no-ff --no-commit incoming
-   $ git commit --signoff
+   $ git merge --no-ff incoming
 
+Contributing
+============
+
+If you have scripts to add or want to help reviewing scripts, contact hoxu at chat.freenode.net.
